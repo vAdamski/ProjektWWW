@@ -1,14 +1,30 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="../css/main.css" type="text/css" />
-    </head>
-    <body>
-        <div id="container">
-            <form>
-                <input type="text" id="login" name="login" value="Login">
-                <input type="text" id="password" name="password" value="Password">
-                <input onClick="login()" type="submit" value="Login"></input>
-            </form>
-        </div>
-    </body>
+
+<head>
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+</head>
+
+<body>
+    <div class="nav">
+        <ol>
+            <li>
+                <a href="#">Strona główna</a>
+            </li>
+            <li>
+                <a href="#">Rejestracja</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+        </ol>
+    </div>
+    <div id="container">
+        <form>
+            <input type="text" id="login" name="login" placeholder="Login">
+            <input type="password" id="password" name="password" placeholder="Password">
+            <input onClick="loguj()" type="button" value="Login"></input>
+        </form>
+    </div>
+</body>
+
 </html>

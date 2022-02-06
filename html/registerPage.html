@@ -1,13 +1,31 @@
 <html>
-    <head>
 
-    </head>
-    <body>
+<head>
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+</head>
+
+<body>
+    <div class="nav">
+        <ol>
+            <li>
+                <a href="#">Strona główna</a>
+            </li>
+            <li>
+                <a href="#">Rejestracja</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+        </ol>
+    </div>
+    <div id="container">
         <form>
-            <input type="text" id="login" name="login" value="Login">
-            <input type="email" id="email" name="email" value="Email">
-            <input type="password" id="password" name="password" value="Password">
-            <button onClick="login()">Register</button>
+            <input type="text" id="login" name="login" placeholder="Login">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="password" id="password" name="password" placeholder="Password">
+            <input onClick="rejestruj()" type="button" value="Login"></input>
         </form>
-    </body>
+    </div>
+</body>
+
 </html>
