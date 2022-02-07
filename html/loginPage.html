@@ -2,9 +2,11 @@
 
 <head>
     <link rel="stylesheet" href="../css/main.css" type="text/css" />
+
 </head>
 
 <body>
+
     <div class="nav">
         <ol>
             <li>
@@ -24,7 +26,25 @@
             <input type="password" id="password" name="password" placeholder="Password">
             <input onClick="loguj()" type="button" value="Login"></input>
         </form>
+        <p id="p1"></p>
     </div>
+
+
+
+
+    
+    <script>
+        function loguj() {
+            var nazwa = document.getElementById("login").value;
+            var pwd = document.getElementById("password").value;
+            if (nazwa != 'usergr2' || pwd != "ZAQ!2wsx") {
+                document.getElementById("p1").innerHTML = "Zle hasło lub nazwa użytkownika";
+                document.getElementById("p1").style.backgroundColor = "red";
+            }
+            history.replaceState({}, null, "/index.html");
+        }
+    </script>
 </body>
+
 
 </html>

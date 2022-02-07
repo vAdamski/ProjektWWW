@@ -23,9 +23,30 @@
             <input type="text" id="login" name="login" placeholder="Login">
             <input type="email" id="email" name="email" placeholder="Email">
             <input type="password" id="password" name="password" placeholder="Password">
-            <input onClick="rejestruj()" type="button" value="Login"></input>
+            <input onClick="rejestacja()" type="button" value="Login"></input>
         </form>
+        <p id="p1"></p>
     </div>
+
+
+
+
+
+    <script>
+        function rejestacja() {
+            var nazwa = document.getElementById("login").value;
+            var pwd = document.getElementById("email").value;
+            var pwd = document.getElementById("password").value;
+            if (pwd == "ZAQ!2wsx") {
+                document.getElementById("p1").innerHTML = "Konto zostało utworzone.";
+            } else {
+                document.getElementById("p1").innerHTML = "Konto już istnieje."
+                document.getElementById("p1").style.backgroundColor = "red"
+            }
+            history.replaceState({}, null, "/index.html");
+        }
+
+    </script>
 </body>
 
 </html>

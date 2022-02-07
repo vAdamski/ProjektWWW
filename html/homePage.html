@@ -1,8 +1,191 @@
 <html>
-    <head>
 
-    </head>
-    <body>
+<head>
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+</head>
+
+<body>
+    <div class="nav">
+        <ol>
+            <li>
+                <a href="#">Strona główna</a>
+            </li>
+            <li>
+                <a href="#">Rejestracja</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+        </ol>
+    </div>
+
+    
+
+    <div id="mainSite">
+
+        <!-------------------------Sekcaje eventow----------------------------------->
         
-    </body>
+        <div id="events">
+
+            <!-------------------------Event 1----------------------------------->
+
+            <div id="event_1">
+                <div class="event">
+                    <div class="leftSideEvent">
+                        <img src="../data/kino.jpg" alt="Kino" height="230" width="230">
+                    </div>
+                    <div class="rightSideEvent">
+                        <div class="Opis">
+                            <h2>Maraton Horrorów Helios - 4 Nieromantyczne Horrory</h2>
+                            <p>
+                                Zapraszamy na alternatywny dla różowego, walentynkowego kiczu Nocny Maraton Horrorów.
+                                Już 11 lutego w kinach Helios zagramy 4 Nieromantyczne Horrory. Kup bilety już teraz.
+                            </p>
+                        </div>
+                        <div class="MainEventSite">
+                            <div style="float: left; width: 270px;">
+                                <form>
+                                    <label for="ileOsob">Ile osób na bilecie:</label>
+                                    <select name="ileOsob" style="width: 100px;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div style="float: left;">
+                                <input onClick="dodajEvent()" type="button" value="Zarezerwuj"
+                                    style="margin: auto; margin-left: 150px;"></input>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+
+            <!-------------------------Event 2----------------------------------->
+
+            <div id="event_2">
+                <div class="event">
+                    <div class="leftSideEvent">
+                        <img src="../data/koncert.jpg" alt="Koncert" height="230" width="230">
+                    </div>
+                    <div class="rightSideEvent">
+                        <div class="Opis">
+                            <h2>Polish Hip-Hop Festival 2022</h2>
+                            <p>
+                                O.S.T.R., Białas, Solar, PALUCH, Sarius, Wini, PRO8L3M, Bedoes, Anatom, Hodak, LOUIS Villain,
+                                Tymek, Avi, Szpaku, Gverilla, JAN RAPOWANIE, Kaz Bałagane, Kabe, OKI, Piotr Cartman, Mata
+                            </p>
+                        </div>
+                        <div class="MainEventSite">
+                            <div style="float: left; width: 270px;">
+                                <form>
+                                    <label for="ileOsob">Ile osób na bilecie:</label>
+                                    <select name="ileOsob" style="width: 100px;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div style="float: left;">
+                                <input onClick="dodajEvent()" type="button" value="Zarezerwuj"
+                                    style="margin: auto; margin-left: 150px;"></input>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+
+            <!-------------------------Event 3----------------------------------->
+
+            <div id="event_3">
+                <div class="event">
+                    <div class="leftSideEvent">
+                        <img src="../data/kino.jpg" alt="Kino" height="230" width="230">
+                    </div>
+                    <div class="rightSideEvent">
+                        <div class="Opis">
+                            <h2>MIĘDZYNARODOWY FESTIWAL KOMIKSU I GIER W ŁODZI</h2>
+                            <p>
+                                Jest największą tego typu imprezą w Polsce oraz Europie Środkowo-Wschodniej. Do 1998 roku funkcjonował jako Ogólnopolski Konwent Twórców Komiksu.
+                        </div>
+                        <div class="MainEventSite">
+                            <div style="float: left; width: 270px;">
+                                <form>
+                                    <label for="ileOsob">Ile osób na bilecie:</label>
+                                    <select name="ileOsob" style="width: 100px;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div style="float: left;">
+                                <input onClick="dodajEvent()" type="button" value="Zarezerwuj"
+                                    style="margin: auto; margin-left: 150px;"></input>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------Sekcja moich eventow----------------------------------->
+
+        <div id="myEvents">
+            <div id="myEventsHead">
+                <hr style="height:2px; width:50%; border-width:0; color:red; background-color:red">
+            </div>
+
+            <div id="event_my_1" style="display: ;">
+                <div class="event">
+                    <div class="leftSideEvent">
+                        <img src="../data/kino.jpg" alt="Kino" height="230" width="230">
+                    </div>
+                    <div class="rightSideEvent">
+                        <div class="Opis">
+                            <h2>Maraton Horrorów Helios - 4 Nieromantyczne Horrory</h2>
+                            <p>
+                                Zapraszamy na alternatywny dla różowego, walentynkowego kiczu Nocny Maraton Horrorów.
+                                Już 11 lutego w kinach Helios zagramy 4 Nieromantyczne Horrory. Kup bilety już teraz.
+                            </p>
+                        </div>
+                        <div class="MainEventSite">
+                            
+                            <div style="float: left;">
+                                <input onClick="usunEvent()" type="button" value="Anuluj"
+                                    style="margin: auto; background-color: red;"></input>
+                            </div>
+                            <div style="float: left; width: 270px;">
+                                <img src="../data/qr.png" alt="Kino" height="65" width="65" style="margin-left: 350px;">
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+
 </html>

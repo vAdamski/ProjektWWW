@@ -162,3 +162,47 @@ ol > li:hover > a
 {
 	color: #451717;
 }
+
+.event
+{
+	margin: 20px;
+	height: 250px;
+	width: 1000px;
+	background-color: grey;
+	border-radius: 30px;
+	border-color: #cf6969;
+	border-style: solid;
+}
+
+.leftSideEvent
+{
+	float:left;
+	height: 230px;
+	width: 230px;
+	margin: 10px;
+}
+
+.leftSideEvent > img
+{
+	border-radius: 30px;
+}
+
+.rightSideEvent
+{
+	float:left;
+	height: 230px;
+	width: 730px;
+	margin: 10px;
+	color: white;
+}
+
+.rightSideEvent > h2{
+	margin: 10px;
+	text-align:left;
+	
+}
+
+.rightSideEvent > p{
+	margin: 10px;
+	text-align:left;
+}
