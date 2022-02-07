@@ -1,14 +1,13 @@
 body
 {
-	/* Background pattern from subtlepatterns.com */
-	background-color: #333;
+	background-color: #3C3C3C;
 	font-size: 20px;
 	margin: 0 !important;
 }
 
 #container
 {
-	background-color: #666;
+	background-color: #087E8B;
 	width: 300px;
 	padding: 50px;
 	margin-left: auto;
@@ -116,10 +115,10 @@ input:focus:-ms-input-placeholder
 { 
 	width: 100%;
 	padding: 10px 0;
-	background-color: #c34f4f;
+	background-color: #FF5A5F;
 	text-align: center;
-	border-top: 1px solid #751b1b;
-	border-bottom: 1px solid #751b1b;
+	border-top: 1px solid #FF1A5F;
+	border-bottom: 1px solid #FF1A5F;
 }
 
 ol
@@ -145,17 +144,22 @@ ol > li
 	float: left;
 	width: 150px;
 	height: 40px;
-	border-right: 1px dashed #751b1b;
+	border-right: 1px dashed black;
 }
 
 ol > li:first-child
 {
-	border-left: 1px dashed #751b1b;
+	border-left: 1px dashed balck;
+}
+
+ol > li:last-child
+{
+	border-right: none;
 }
 
 ol > li:hover
 {
-	background-color: #cf6969;
+	background-color: #FF515A;
 }
 
 ol > li:hover > a
@@ -205,4 +209,18 @@ ol > li:hover > a
 .rightSideEvent > p{
 	margin: 10px;
 	text-align:left;
+}
+
+.siteName
+{
+	/* background-color: #36b03c; */
+	margin: auto;
+	padding-top: 200px;
+	height: 200px;
+	width: 500px;
+}
+
+.siteName > image
+{
+	margin-bottom: 40px;
 }

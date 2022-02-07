@@ -2,19 +2,20 @@
 
 <head>
     <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <script type="text/javascript" src="../js/rejesteracja.js"></script>
 </head>
 
 <body>
     <div class="nav">
         <ol>
             <li>
-                <a href="#">Strona główna</a>
+                <a href="mainPage.html">Strona główna</a>
             </li>
             <li>
-                <a href="#">Rejestracja</a>
+                <a href="registerPage.html">Rejestracja</a>
             </li>
             <li>
-                <a href="#">Login</a>
+                <a href="loginPage.html">Login</a>
             </li>
         </ol>
     </div>
@@ -27,26 +28,6 @@
         </form>
         <p id="p1"></p>
     </div>
-
-
-
-
-
-    <script>
-        function rejestacja() {
-            var nazwa = document.getElementById("login").value;
-            var pwd = document.getElementById("email").value;
-            var pwd = document.getElementById("password").value;
-            if (pwd == "ZAQ!2wsx") {
-                document.getElementById("p1").innerHTML = "Konto zostało utworzone.";
-            } else {
-                document.getElementById("p1").innerHTML = "Konto już istnieje."
-                document.getElementById("p1").style.backgroundColor = "red"
-            }
-            history.replaceState({}, null, "/index.html");
-        }
-
-    </script>
 </body>
 
 </html>
