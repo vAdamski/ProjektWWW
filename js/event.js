@@ -13,7 +13,7 @@ function show_event2(){
 }
 
 function show_event3(){
-    var temp = document.getElementById("ileOsob1").value;
+    var temp = document.getElementById("ileOsob3").value;
     temp = Number.parseInt(temp,10);
     if(temp == 6){
         alert("Brak wystarczającej ilości miejsc do rezerwacji")
