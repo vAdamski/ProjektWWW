@@ -6,7 +6,7 @@ function rejestacja() {
         document.getElementById("p1").innerHTML = "Konto zostało utworzone.";
     } else {
         document.getElementById("p1").innerHTML = "Konto już istnieje."
-        document.getElementById("p1").style.backgroundColor = "red"
+        document.getElementById("p1").style.color = "red"
     }
     history.replaceState({}, null, "/index.html");
 }
