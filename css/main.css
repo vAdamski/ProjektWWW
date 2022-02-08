@@ -224,3 +224,10 @@ ol > li:hover > a
 {
 	margin-bottom: 40px;
 }
+
+.ileOsob
+{
+	margin: auto;
+	width: 200px;
+	float: left;
+}
