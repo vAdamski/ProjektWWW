@@ -4,12 +4,17 @@ function show_event1(){
     if(temp >= 4){
         alert("Brak wystarczającej ilości miejsc do rezerwacji")
     }else{
-    document.getElementById("event_my_1").style.display = "block";
+        var info = "Ilosc miejsc na bilecie: " + temp;
+        document.getElementById("event_my_1").style.display = "block";
+        document.getElementById("ileOsobEvent1").innerHTML = info;
     }
 }
 
 function show_event2(){
     document.getElementById("event_my_2").style.display = "block"
+    var temp = document.getElementById("ileOsob2").value;
+    var info = "Ilosc miejsc na bilecie: " + temp;
+    document.getElementById("ileOsobEvent2").innerHTML = info;
 }
 
 function show_event3(){
@@ -18,25 +23,26 @@ function show_event3(){
     if(temp == 6){
         alert("Brak wystarczającej ilości miejsc do rezerwacji")
     }else{
+        var info = "Ilosc miejsc na bilecie: " + temp;  
     document.getElementById("event_my_3").style.display = "block";
+    document.getElementById("ileOsobEvent3").innerHTML = info;
     }
 }
 
 function hide_event1(){ 
-    var temp = document.getElementById("ileOsob1").value;
     document.getElementById("event_my_1").style.display = "none"
-    document.getElementById("ileOsobEvent1").value = temp;
+    
 }
 
 function hide_event2(){
-    var temp = document.getElementById("ileOsob2").value;
+    
     document.getElementById("event_my_2").style.display = "none"
-    document.getElementById("ileOsobEvent2").value = temp;
+    
 }
 
 function hide_event3(){
-    var temp = document.getElementById("ileOsob3").value;
+    
     document.getElementById("event_my_3").style.display = "none"
-    document.getElementById("ileOsobEvent3").value = temp;
+    
     
 }
